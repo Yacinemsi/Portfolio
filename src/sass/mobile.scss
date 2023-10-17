@@ -1,0 +1,104 @@
+$main-color: #ff6060;
+$footer-color: black;
+$white: white;
+$font-stack: Montserrat, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@media only screen and (max-width: 425px) {
+  header {
+    padding: 25px;
+    a {
+      text-transform: uppercase;
+    }
+  }
+  .hero-container {
+    height: 150px;
+    justify-content: flex-start;
+    h1 {
+      margin-left: 10px;
+    }
+    .title-part1,
+    .title-part2 {
+      display: block;
+      font-size: 24px;
+    }
+  }
+  .hero-mobile-about {
+    height: 300px;
+    border-radius: 10px;
+  }
+  main {
+    background-color: transparent;
+    padding-bottom: 30px;
+    .liste-logement {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+    .accordeon {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    .accordions-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .title-host .host {
+      align-items: center;
+      .mobile-rating {
+        display: block;
+      }
+      .host-name-image {
+        margin-top: 0;
+        margin-right: 0px;
+        width: 40%;
+      }
+    }
+    .desktop-rating {
+      display: none;
+    }
+    .title-host {
+      flex-direction: column;
+      .host {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+      .title {
+        h1 {
+          font-size: 24px;
+        }
+        ul {
+          margin-left: -5px;
+          li {
+            font-size: 12px;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+    .image-counter {
+      display: none;
+    }
+  }
+  .container-404 {
+    h1 {
+      font-size: 50px;
+      font-weight: 800;
+      color: $main-color;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: $main-color;
+      margin-bottom: 100px;
+      width: 80%;
+    }
+    a {
+      font-size: 12px;
+      color: $main-color;
+      text-decoration: underline;
+      margin-bottom: 100px;
+    }
+  }
+}
