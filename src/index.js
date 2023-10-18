@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./sass/index.scss";
 import "./sass/App.scss";
 import "./sass/mobile.scss";
+import "./sass/tablet-landscape.scss";
+import "./sass/tablet-portrait.scss";
 import App from "./App/App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";

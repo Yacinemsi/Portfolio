@@ -1,0 +1,45 @@
+@media (max-width: 1024px) {
+  .sidebar-navigation {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+    text-align: center;
+    z-index: 99;
+    ul {
+      display: flex;
+      gap: 30px;
+      li {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  main {
+    width: 100%;
+    margin: 0;
+    #bienvenue {
+      height: 130vh;
+      h1 {
+        font-size: 40px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      @keyframes fadeInBottomSide {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in-bottom-side {
+        animation: fadeInBottomSide 1s forwards;
+      }
+    }
+  }
+}

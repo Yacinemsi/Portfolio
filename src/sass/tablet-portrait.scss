@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+  .sidebar-navigation {
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 2rem;
+
+    .menu-icon {
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .menu-hamburger {
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 250px; /* Vous pouvez ajuster selon vos besoins */
+      height: 100vh;
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+          padding: 15px 10px;
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: block;
+          }
+        }
+      }
+    }
+
+    &.open {
+      .hamburger {
+        display: none;
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    margin-left: 0;
+  }
+}

@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
+import MenuDesktop from "./MenuDesktop";
+import MenuHamburger from "./MenuHamburger";
 
 const SidebarNavigation = () => {
   const [activeSection, setActiveSection] = useState("");
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     // Logique d'animation au chargement de la page
@@ -32,50 +35,22 @@ const SidebarNavigation = () => {
       }
     };
 
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
     <header className="sidebar-navigation">
-      <nav>
-        <ul>
-          <li>
-            <a
-              href="#bienvenue"
-              className={activeSection === "bienvenue" ? "active-link" : ""}
-            >
-              Bienvenue
-            </a>
-          </li>
-          <li>
-            <a
-              href="#qui-je-suis"
-              className={activeSection === "qui-je-suis" ? "active-link" : ""}
-            >
-              Qui je suis
-            </a>
-          </li>
-          <li>
-            <a
-              href="#quest-ce-que-je-fais"
-              className={
-                activeSection === "quest-ce-que-je-fais" ? "active-link" : ""
-              }
-            >
-              Qu'est-ce que je fais
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contactez-moi"
-              className={activeSection === "contactez-moi" ? "active-link" : ""}
-            >
-              Contactez-moi
-            </a>
-          </li>
-        </ul>
-      </nav>
+      {windowWidth < 769 ? <MenuHamburger /> : <MenuDesktop />}
     </header>
   );
 };
