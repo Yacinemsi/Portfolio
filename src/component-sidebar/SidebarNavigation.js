@@ -17,21 +17,22 @@ const SidebarNavigation = () => {
 
     // Logique de suivi du scroll
     const handleScroll = () => {
-      const bienvenue = document.getElementById("bienvenue").offsetTop;
       const quiJeSuis = document.getElementById("qui-je-suis").offsetTop;
+      const projets = document.getElementById("projets").offsetTop;
       const questCeQueJeFais = document.getElementById(
         "quest-ce-que-je-fais"
       ).offsetTop;
       const contactezMoi = document.getElementById("contactez-moi").offsetTop;
-
       if (window.scrollY >= contactezMoi) {
         setActiveSection("contactez-moi");
       } else if (window.scrollY >= questCeQueJeFais) {
         setActiveSection("quest-ce-que-je-fais");
+      } else if (window.scrollY >= projets) {
+        setActiveSection("projets");
       } else if (window.scrollY >= quiJeSuis) {
         setActiveSection("qui-je-suis");
-      } else if (window.scrollY >= bienvenue) {
-        setActiveSection("bienvenue");
+      } else {
+        setActiveSection(""); // pour aucune section, si vous êtes tout en haut de la page
       }
     };
 
@@ -50,7 +51,11 @@ const SidebarNavigation = () => {
 
   return (
     <header className="sidebar-navigation">
-      {windowWidth < 769 ? <MenuHamburger /> : <MenuDesktop />}
+      {windowWidth < 769 ? (
+        <MenuHamburger activeSection={activeSection} />
+      ) : (
+        <MenuDesktop activeSection={activeSection} />
+      )}
     </header>
   );
 };

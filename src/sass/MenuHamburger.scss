@@ -6,26 +6,140 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
+.menu-icon {
+  width: 25px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+  .bar {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    transition: all 0.3s;
+  }
+  .bar1 {
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
 
+  .bar2 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .bar3 {
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Pour transformer en croix */
+.menu-icon.open .bar1 {
+  transform: rotate(-48deg) translateY(12px);
+  transform-origin: center center;
+}
+
+.menu-icon.open .bar2 {
+  opacity: 0;
+}
+
+.menu-icon.open .bar3 {
+  transform: rotate(48deg) translateY(-12px);
+  transform-origin: center center;
+}
 .modal {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 1px solid #ccc;
-  background: #fff;
+  background: #31244f;
   overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 0px;
+  width: 300px;
+  overflow-x: hidden;
+
+  nav {
+    width: 100%;
+    margin-top: 15px;
+    .active-link {
+      color: white !important;
+      max-width: 100%;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0px;
+
+      a {
+        box-sizing: border-box;
+        color: rgba(255, 255, 255, 0.35);
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.25em;
+        line-height: 1.75;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;
+        position: relative;
+        display: inline-block;
+        padding: 1.35em 10px;
+        transition: color 0.1s ease;
+        width: 100%;
+        &:hover,
+        &.active-link {
+          color: rgba(255, 255, 255, 0.55);
+        }
+        // Bordure de base sous chaque lien
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0; // Pour occuper toute la largeur
+          width: 100%;
+          height: 2px;
+          background: #3c2c62;
+        }
+
+        // Effet de remplissage de la bordure pour le lien actif et au survol
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 0;
+          height: 2px;
+          background: linear-gradient(to right, #5e42a6, #b74e91);
+          transition: width 0.3s;
+        }
+
+        &:hover::after,
+        &.active-link::after {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .close {
+  position: absolute;
+  top: -5px;
+  right: 0px;
   color: #aaaaaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
   &:hover,
@@ -33,5 +147,21 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+}
+.menu-hamburger {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 15px 10px;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        display: block;
+      }
+    }
   }
 }

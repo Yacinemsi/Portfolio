@@ -6,18 +6,18 @@ const MenuDesktop = ({ activeSection }) => {
       <ul>
         <li>
           <a
-            href="#bienvenue"
-            className={activeSection === "bienvenue" ? "active-link" : ""}
-          >
-            Bienvenue
-          </a>
-        </li>
-        <li>
-          <a
             href="#qui-je-suis"
             className={activeSection === "qui-je-suis" ? "active-link" : ""}
           >
             Qui je suis
+          </a>
+        </li>
+        <li>
+          <a
+            href="#projets"
+            className={activeSection === "projets" ? "active-link" : ""}
+          >
+            Projets
           </a>
         </li>
         <li>
