@@ -2,31 +2,31 @@
   "projets": [
     {
       "id": 1,
-      "nom": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+      "nom": "Créer la page d'accueil d'une agence de voyage avec HTML & CSS",
       "description": "Pour mon premier projet de ma formation de développeur web, j'ai réalisé une intégration en HTML/CSS d'une maquette conçue sous Figma, en versions desktop, tablette et mobile.",
-      "technologies": ["HTML", "CSS"],
+      "technologies": ["/images/html5.png", "/images/css3.png"],
       "codeSource": "https://github.com/Yacinemsi/Booki",
       "image": "/images/mockup-booki/mockup-booki.jpg"
     },
     {
       "id": 2,
-      "nom": "Créez une page web dynamique avec JavaScript",
+      "nom": "Créer une page web dynamique avec JavaScript",
       "description": "Pour mon deuxième projet de ma formation de développeur web, j'ai réalisé l'intégration de la page de connexion d'un portfolio de photographe. Cette page permet à l'utilisateur connecté d'ajouter, supprimer ou modifier des photos via une fenêtre modale.",
-      "technologies": ["Javascript", "CSS"],
+      "technologies": ["/images/js.png", "/images/css3.png"],
       "codeSource": "https://github.com/Yacinemsi/Portfolio-photographe",
       "image": "/images/mockup-sophie-bluel/mockup-desktop-bluel.png"
     },
     {
       "id": 3,
-      "nom": "Planifiez le développement du site de votre client",
+      "nom": "Planifier le développement du site de votre client",
       "description": "Pour mon troisième projet au sein de ma formation de développeur web, j'ai préparé et planifié le développement d'un site.",
-      "technologies": ["Trello", "Canva"],
+      "technologies": ["/images/trello.png", "/images/canva.webp"],
       "codeSource": "",
       "image": "/images/mockup-qwenta/mockup-qwenta.jpg"
     },
     {
       "id": 4,
-      "nom": "Débuggez et optimisez un site de photographe",
+      "nom": "Débugger et optimisez un site de photographe",
       "description": "Pour mon quatrième projet, j'ai réalisé une optimisation globale du site, tant sur les performances que sur le SEO. J'ai mis en place le référencement local en utilisant Schema.org, ajouté les métadonnées pour les réseaux sociaux et effectué les modifications liées à l’accessibilité du site.",
       "technologies": [],
       "codeSource": "https://github.com/Yacinemsi/nina-carducci",
@@ -34,17 +34,21 @@
     },
     {
       "id": 5,
-      "nom": "Créez une application web de location immobilière",
+      "nom": "Créer une application web de location immobilière",
       "description": "Pour mon cinquième projet, j'ai intégré une maquette graphique conçue sous Figma en versions desktop et mobile. Le projet a été réalisé avec React.",
-      "technologies": ["React.js", "Sass"],
+      "technologies": ["/images/react.png", "/images/sass.png"],
       "codeSource": "https://github.com/Yacinemsi/Kasa",
       "image": "/images/mockup-kasa/mockup-kasa.jpg"
     },
     {
       "id": 6,
-      "nom": "Développez le back-end d'un site de notation de livres",
+      "nom": "Développer le back-end d'un site de notation de livres",
       "description": "Pour mon sixième projet, j'ai mis en place le back-end d'un site de notation de livres avec Node.js, utilisant Mongoose et Express. Cela inclut la mise en place de l'inscription et de la connexion d'un utilisateur. Une fois connecté, il peut ajouter, modifier ou supprimer un livre s'il lui appartient. Sinon, il ne peut que le noter.",
-      "technologies": ["Node.js", "MongoDB", "Express"],
+      "technologies": [
+        "/images/nodejs.png",
+        "/images/mongodb.png",
+        "/images/expressjs.png"
+      ],
       "codeSource": "https://github.com/Yacinemsi/backend",
       "image": "/images/mockup-mon-vieux-grimoir/mockup-livre.jpg"
     }

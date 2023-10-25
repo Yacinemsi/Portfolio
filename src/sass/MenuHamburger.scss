@@ -1,56 +1,57 @@
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-}
 .menu-icon {
-  width: 25px;
-  height: 20px;
   position: relative;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  margin-right: 20px;
-  .bar {
-    background-color: white;
-    height: 3px;
-    width: 100%;
-    position: absolute;
-    transition: all 0.3s;
-  }
-  .bar1 {
-    top: 0;
-    margin: 0;
-    padding: 0;
-  }
-
-  .bar2 {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .bar3 {
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: 0.5s;
 }
 
-/* Pour transformer en croix */
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+  transition-duration: 0.5s;
+  position: relative;
+}
+
+.bar1,
+.bar3 {
+  width: 70%;
+  transition-duration: 0.5s;
+}
+
+.bar2 {
+  transition-duration: 0.8s;
+}
+
+.menu-icon.open .bar {
+  position: absolute;
+}
+
 .menu-icon.open .bar1 {
-  transform: rotate(-48deg) translateY(12px);
-  transform-origin: center center;
+  width: 100%;
+  transform: rotate(45deg);
 }
 
 .menu-icon.open .bar2 {
-  opacity: 0;
+  transform: scaleX(0);
 }
 
 .menu-icon.open .bar3 {
-  transform: rotate(48deg) translateY(-12px);
-  transform-origin: center center;
+  width: 100%;
+  transform: rotate(-45deg);
 }
+
+.menu-icon.open {
+  transform: rotate(180deg);
+}
+
 .modal {
   position: fixed;
   top: 50%;

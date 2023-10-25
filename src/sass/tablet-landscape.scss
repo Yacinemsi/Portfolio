@@ -18,12 +18,12 @@
   main {
     width: 100%;
     margin: 0;
-    #bienvenue {
+    #qui-je-suis {
       height: 130vh;
       h1 {
-        font-size: 40px;
+        font-size: 30px;
       }
-      h2 {
+      p {
         font-size: 16px;
       }
       @keyframes fadeInBottomSide {
