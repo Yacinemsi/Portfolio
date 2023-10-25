@@ -134,8 +134,40 @@ main {
     }
   }
   #projets {
-    height: 100vh;
     background-color: #4b4eac;
+    width: 100%;
+    .projet-container {
+      display: flex;
+      width: 100%;
+      .projet-image {
+        width: 30%;
+        img {
+          width: 100%; /* L'image prendra 50% de la largeur de la fenêtre d'affichage */
+          height: auto;
+        }
+      }
+      .projet-details {
+        width: 70%;
+      }
+    }
+    .projet-container[data-id="1"] {
+      background-color: #4f52b5;
+    }
+    .projet-container[data-id="2"] {
+      background-color: #4f52b5;
+    }
+    .projet-container[data-id="3"] {
+      background-color: #4f52b5;
+    }
+    .projet-container[data-id="4"] {
+      background-color: #4f52b5;
+    }
+    .projet-container[data-id="5"] {
+      background-color: #4f52b5;
+    }
+    .projet-container[data-id="6"] {
+      background-color: #4f52b5;
+    }
   }
   #quest-ce-que-je-fais {
     height: 100vh;
