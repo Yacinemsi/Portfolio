@@ -7,7 +7,7 @@ const Projets = () => {
       {projetsData.projets.map((projet) => (
         <div className="projet-container" key={projet.id} data-id={projet.id}>
           <div className="projet-image">
-            <img src={projet.image} alt={projet.nom} />
+            <img src={process.env.PUBLIC_URL + projet.image} alt={projet.nom} />
           </div>
           <div className="projet-details">
             <h2>{projet.nom}</h2>
@@ -16,7 +16,10 @@ const Projets = () => {
               <ul className="projet-technologies">
                 {projet.technologies.map((tech) => (
                   <li key={tech}>
-                    <img src={tech} alt={`Icon of ${tech}`} />
+                    <img
+                      src={process.env.PUBLIC_URL + tech}
+                      alt={`Icon of ${tech}`}
+                    />
                   </li>
                 ))}
               </ul>

@@ -6,7 +6,7 @@
       "description": "Pour mon premier projet de ma formation de développeur web, j'ai réalisé une intégration en HTML/CSS d'une maquette conçue sous Figma, en versions desktop, tablette et mobile.",
       "technologies": ["/images/html5.png", "/images/css3.png"],
       "codeSource": "https://github.com/Yacinemsi/Booki",
-      "image": "process.env.PUBLIC_URL + /images/mockup-booki/mockup-booki.jpg"
+      "image": "/images/mockup-booki/mockup-booki.jpg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "description": "Pour mon deuxième projet de ma formation de développeur web, j'ai réalisé l'intégration de la page de connexion d'un portfolio de photographe. Cette page permet à l'utilisateur connecté d'ajouter, supprimer ou modifier des photos via une fenêtre modale.",
       "technologies": ["/images/js.png", "/images/css3.png"],
       "codeSource": "https://github.com/Yacinemsi/Portfolio-photographe",
-      "image": "process.env.PUBLIC_URL + /images/mockup-sophie-bluel/mockup-desktop-bluel.png"
+      "image": "/images/mockup-sophie-bluel/mockup-desktop-bluel.png"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "description": "Pour mon troisième projet au sein de ma formation de développeur web, j'ai préparé et planifié le développement d'un site.",
       "technologies": ["/images/trello.png", "/images/canva.webp"],
       "codeSource": "",
-      "image": "process.env.PUBLIC_URL + /images/mockup-qwenta/mockup-qwenta.jpg"
+      "image": "/images/mockup-qwenta/mockup-qwenta.jpg"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "description": "Pour mon quatrième projet, j'ai réalisé une optimisation globale du site, tant sur les performances que sur le SEO. J'ai mis en place le référencement local en utilisant Schema.org, ajouté les métadonnées pour les réseaux sociaux et effectué les modifications liées à l’accessibilité du site.",
       "technologies": [],
       "codeSource": "https://github.com/Yacinemsi/nina-carducci",
-      "image": "process.env.PUBLIC_URL + /images/mockup-nina-carducci/mockup-nina-carducci.png"
+      "image": "/images/mockup-nina-carducci/mockup-nina-carducci.png"
     },
     {
       "id": 5,
@@ -38,19 +38,19 @@
       "description": "Pour mon cinquième projet, j'ai intégré une maquette graphique conçue sous Figma en versions desktop et mobile. Le projet a été réalisé avec React.",
       "technologies": ["/images/react.png", "/images/sass.png"],
       "codeSource": "https://github.com/Yacinemsi/Kasa",
-      "image": "process.env.PUBLIC_URL + /images/mockup-kasa/mockup-kasa.jpg"
+      "image": "/images/mockup-kasa/mockup-kasa.jpg"
     },
     {
       "id": 6,
       "nom": "Développer le back-end d'un site de notation de livres",
       "description": "Pour mon sixième projet, j'ai mis en place le back-end d'un site de notation de livres avec Node.js, utilisant Mongoose et Express. Cela inclut la mise en place de l'inscription et de la connexion d'un utilisateur. Une fois connecté, il peut ajouter, modifier ou supprimer un livre s'il lui appartient. Sinon, il ne peut que le noter.",
       "technologies": [
-        "process.env.PUBLIC_URL + /images/nodejs.png",
-        "process.env.PUBLIC_URL + /images/mongodb.png",
-        "process.env.PUBLIC_URL + /images/expressjs.png"
+        "/images/nodejs.png",
+        "/images/mongodb.png",
+        "/images/expressjs.png"
       ],
       "codeSource": "https://github.com/Yacinemsi/backend",
-      "image": "process.env.PUBLIC_URL + /images/mockup-mon-vieux-grimoir/mockup-livre.jpg"
+      "image": "/images/mockup-mon-vieux-grimoir/mockup-livre.jpg"
     }
   ]
 }
