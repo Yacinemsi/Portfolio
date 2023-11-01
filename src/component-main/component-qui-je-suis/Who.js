@@ -4,7 +4,7 @@ const Who = () => {
   return (
     <div id="qui-je-suis">
       <img
-        src="../../../images/photo-de-profil.png"
+        src="../../../build/images/photo-de-profil.png"
         alt="Photo de Yacine"
       ></img>
       <div className="bienvenue_item fade-in-bottom">
