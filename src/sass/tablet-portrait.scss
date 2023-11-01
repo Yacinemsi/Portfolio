@@ -1,3 +1,16 @@
+$main-color: #b0b1de;
+$footer-color: #493381;
+$color-who: #6c48ba;
+$color-h1: #e3e3fc;
+$color-h2: #b3aef3;
+$color-projet-1: #493778;
+$color-projet-2: #583c97;
+$color-projet-3: #6c48ba;
+$color-projet-4: #7d57d4;
+$color-projet-5: #8b72e2;
+$color-projet-6: #9c8eeb;
+$color-contact: #5e42a5;
+
 @media (max-width: 768px) {
   .sidebar-navigation {
     width: 100%;
@@ -30,6 +43,17 @@
           p {
             font-size: 14px;
           }
+        }
+      }
+    }
+    #contactez-moi {
+      .contact {
+        display: flex;
+        flex-direction: column;
+        .contact_form {
+          width: 95%;
+          border-bottom: solid 1px $color-projet-4;
+          border-right: none;
         }
       }
     }

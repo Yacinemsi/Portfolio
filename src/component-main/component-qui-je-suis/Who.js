@@ -3,8 +3,12 @@ import React from "react";
 const Who = () => {
   return (
     <div id="qui-je-suis">
+      <img
+        src="../../../images/photo-de-profil.png"
+        alt="Photo de Yacine"
+      ></img>
       <div className="bienvenue_item fade-in-bottom">
-        <h1>Développeur front-end React</h1>
+        <h1>Yacine, Développeur front-end React</h1>
         <p>
           Ici, vous découvrirez l'essence de mon parcours professionnel et de ma
           passion pour le développement. <br></br>Chaque projet reflète une part

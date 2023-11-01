@@ -9,6 +9,7 @@ $color-projet-3: #6c48ba;
 $color-projet-4: #7d57d4;
 $color-projet-5: #8b72e2;
 $color-projet-6: #9c8eeb;
+$color-contact: #5e42a5;
 
 $font-stack: Arial, sans-serif;
 
@@ -111,12 +112,21 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
     vertical-align: middle;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding-bottom: 50px;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: contain;
+      background-color: #31244f;
+      align-self: flex-end;
+      margin: 50px;
+    }
     .bienvenue_item {
       width: 80%;
       display: flex;
@@ -126,7 +136,7 @@ main {
 
     h1 {
       font-family: Arial;
-      font-size: 47px;
+      font-size: 40px;
       color: $color-h1;
       padding: 0;
       margin: 0;
@@ -249,18 +259,214 @@ main {
     }
   }
   #quest-ce-que-je-fais {
-    height: 100vh;
-    background-color: #b74d91;
+    background-color: $color-projet-1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+    gap: 30px;
+    .icon-box {
+      background-color: $color-projet-5;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 380px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      h3 {
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: $color-h1;
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: $color-h2;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+      svg {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: white;
+      }
+    }
   }
   #contactez-moi {
-    height: 100vh;
+    font-family: Arial, sans-serif;
     background-color: #5e42a5;
+    padding: 3%;
+    color: $color-contact;
+    .header-contact {
+      padding: 20px;
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+        letter-spacing: 2px;
+      }
+      h3 {
+        color: #b7a9d7;
+        font-size: 16px;
+      }
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+
+      .contact_form {
+        width: 60%;
+        padding: 20px;
+        border-right: solid 1px $color-projet-4;
+        p {
+          color: white;
+          font-size: 20px;
+          letter-spacing: 2px;
+          font-weight: 600;
+        }
+        label {
+          display: block;
+          margin-bottom: 10px;
+          color: white;
+          font-weight: 700;
+        }
+      }
+      .contact_info {
+        width: 40%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h3 {
+          display: block;
+          margin-bottom: 10px;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .contact_form input[type="text"],
+  .contact_form input[type="email"],
+  .contact_form textarea {
+    width: 90%;
+    padding: 15px;
+    border: solid 1px #7e66b7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #664caa;
+    color: white;
+  }
+
+  .contact_form textarea {
+    resize: none;
+    height: 150px;
+  }
+
+  .contact_form {
+    .div-btn {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 95%;
+      button {
+        display: flex;
+        align-items: center;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 0.8em 1.3em 0.8em 0.9em;
+        color: white;
+        background: #ad5389;
+        background: linear-gradient(
+          to right,
+          $color-projet-1,
+          $color-projet-2,
+          $color-projet-1
+        );
+        align-self: flex-end;
+        border: none;
+        letter-spacing: 0.05em;
+        border-radius: 16px;
+        gap: 5px;
+        cursor: pointer;
+        svg {
+          margin-right: 3px;
+          transform: rotate(30deg);
+          transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+        span {
+          transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+          font-size: 14px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 700;
+          letter-spacing: 2px;
+        }
+        &:hover svg {
+          transform: translateX(5px) rotate(90deg);
+        }
+        &:hover span {
+          transform: translateX(7px);
+        }
+      }
+    }
+  }
+
+  .contact_info {
+    display: flex;
+    gap: 20px;
+    .contact-mail {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      h3 {
+        font-size: 20px;
+      }
+      a {
+        color: #9884c5;
+        text-decoration: none;
+        font-weight: 600;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    .social {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      div {
+        display: flex;
+        gap: 20px;
+        a {
+          .fa-linkedin {
+            color: $color-h1;
+            font-size: 26px;
+            &:hover {
+              color: #0b65c2;
+            }
+          }
+          .fa-github {
+            color: $color-h1;
+            font-size: 26px;
+            &:hover {
+              color: #24292e;
+            }
+          }
+        }
+      }
+    }
   }
 
   footer {
     background-color: $footer-color;
     color: #645094;
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
