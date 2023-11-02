@@ -420,7 +420,8 @@ main {
   .contact_info {
     display: flex;
     gap: 20px;
-    .contact-mail {
+    .contact-mail,
+    .cv {
       display: flex;
       gap: 20px;
       flex-direction: column;

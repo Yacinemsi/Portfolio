@@ -88,6 +88,16 @@ const Contact = () => {
               </a>
             </div>
           </div>
+          <div className="cv">
+            <h3>Curriculum vitae</h3>
+            <a
+              href={`${process.env.PUBLIC_URL}/CV-Yacine-Moussaoui.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Télécharger mon CV
+            </a>
+          </div>
         </div>
       </div>
     </div>
