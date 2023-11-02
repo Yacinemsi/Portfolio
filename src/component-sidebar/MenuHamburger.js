@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import "../sass/MenuHamburger.scss"; // Continuez à utiliser ce fichier pour vos styles.
+import "../sass/MenuHamburger.scss";
 
-Modal.setAppElement("#root"); // Ceci est nécessaire pour les besoins d'accessibilité.
+Modal.setAppElement("#root");
 
 function MenuHamburger({ activeSection }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +10,22 @@ function MenuHamburger({ activeSection }) {
   const handleOpenModal = () => {
     if (window.innerWidth <= 768) {
       setIsOpen(true);
+    }
+  };
+
+  const handleAnchorClick = (event, anchorId) => {
+    event.preventDefault();
+
+    const targetElement = document.getElementById(anchorId);
+    if (targetElement) {
+      const topPosition = targetElement.offsetTop;
+      window.scrollTo({
+        top: topPosition,
+        behavior: "smooth",
+      });
+
+      // Fermez le menu modal après avoir cliqué sur un lien.
+      setIsOpen(false);
     }
   };
 
@@ -41,6 +57,7 @@ function MenuHamburger({ activeSection }) {
             <li>
               <a
                 href="#qui-je-suis"
+                onClick={(e) => handleAnchorClick(e, "qui-je-suis")}
                 className={activeSection === "qui-je-suis" ? "active-link" : ""}
               >
                 Qui je suis
@@ -49,6 +66,7 @@ function MenuHamburger({ activeSection }) {
             <li>
               <a
                 href="#projets"
+                onClick={(e) => handleAnchorClick(e, "projets")}
                 className={activeSection === "projets" ? "active-link" : ""}
               >
                 Projets
@@ -57,6 +75,7 @@ function MenuHamburger({ activeSection }) {
             <li>
               <a
                 href="#quest-ce-que-je-fais"
+                onClick={(e) => handleAnchorClick(e, "quest-ce-que-je-fais")}
                 className={
                   activeSection === "quest-ce-que-je-fais" ? "active-link" : ""
                 }
@@ -67,6 +86,7 @@ function MenuHamburger({ activeSection }) {
             <li>
               <a
                 href="#contactez-moi"
+                onClick={(e) => handleAnchorClick(e, "contactez-moi")}
                 className={
                   activeSection === "contactez-moi" ? "active-link" : ""
                 }

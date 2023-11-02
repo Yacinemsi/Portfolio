@@ -1,4 +1,4 @@
-@media (max-width: 426px) {
+@media (max-width: 425px) {
   main {
     width: 100% !important;
     margin-left: 0;
@@ -42,7 +42,7 @@
     #contactez-moi {
       .contact {
         .contact_form {
-          width: 90%;
+          width: 90% !important;
         }
       }
     }
