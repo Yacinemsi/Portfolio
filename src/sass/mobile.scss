@@ -1,4 +1,4 @@
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   main {
     width: 100% !important;
     margin-left: 0;
@@ -36,6 +36,13 @@
         }
         .container-projet-tech {
           justify-content: center;
+        }
+      }
+    }
+    #contactez-moi {
+      .contact {
+        .contact_form {
+          width: 90%;
         }
       }
     }
