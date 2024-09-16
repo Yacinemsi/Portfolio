@@ -2,11 +2,11 @@
   "projets": [
     {
       "id": 1,
-      "nom": "Créer la page d'accueil d'une agence de voyage avec HTML & CSS",
-      "description": "Pour mon premier projet de ma formation de développeur web, j'ai réalisé une intégration en HTML/CSS d'une maquette conçue sous Figma, en versions desktop, tablette et mobile.",
-      "technologies": ["/images/html5.png", "/images/css3.png"],
-      "codeSource": "https://github.com/Yacinemsi/Booki",
-      "image": "/images/mockup-booki/mockup-booki.jpg"
+      "nom": "Création d'une landing page fictive sous forme de SaaS",
+      "description": "Dans ce projet, j'ai réalisé une landing page fictive futuriste d'un SaaS. J'ai utilisé Nuxtjs et TailwindCSS.",
+      "technologies": ["/images/vuejs.png", "/images/tailwindcss.png"],
+      "codeSource": "https://github.com/Yacinemsi/my-nuxt-project",
+      "image": "/images/mockup-landingPage/landingPageSaas.png"
     },
     {
       "id": 2,
@@ -18,11 +18,11 @@
     },
     {
       "id": 3,
-      "nom": "Planifier le développement du site de votre client",
-      "description": "Pour mon troisième projet au sein de ma formation de développeur web, j'ai préparé et planifié le développement d'un site.",
-      "technologies": ["/images/trello.png", "/images/canva.webp"],
-      "codeSource": "",
-      "image": "/images/mockup-qwenta/mockup-qwenta.jpg"
+      "nom": "Intégration d'un portfolio façon Bento",
+      "description": "Premier projet avec l'utilisation de tailwindcss, j'ai intégré la maquette graphique d'un portfolio façon Bento dans le but d'apprendre TailwindCSS",
+      "technologies": ["/images/html5.png", "/images/tailwindcss.png"],
+      "codeSource": "https://github.com/Yacinemsi/challenge-byspike",
+      "image": "/images/mockup-portfolioBento/portfolioBento.png"
     },
     {
       "id": 4,

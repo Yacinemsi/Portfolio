@@ -7,7 +7,20 @@ const Projets = () => {
       {projetsData.projets.map((projet) => (
         <div className="projet-container" key={projet.id} data-id={projet.id}>
           <div className="projet-image">
-            <img src={process.env.PUBLIC_URL + projet.image} alt={projet.nom} />
+            {projet.image.endsWith(".mp4") ? (
+              <video controls>
+                <source
+                  src={process.env.PUBLIC_URL + projet.image}
+                  type="video/mp4"
+                />
+                Votre navigateur ne supporte pas la balise vidéo.
+              </video>
+            ) : (
+              <img
+                src={process.env.PUBLIC_URL + projet.image}
+                alt={projet.nom}
+              />
+            )}
           </div>
           <div className="projet-details">
             <h2>{projet.nom}</h2>

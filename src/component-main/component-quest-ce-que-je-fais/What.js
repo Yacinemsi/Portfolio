@@ -15,11 +15,9 @@ const What = () => {
         <FaCode />
         <h3>Développement Front-end</h3>
         <p>
-          Capable de concevoir des interfaces utilisateur interactives et
-          fluides grâce à une maîtrise approfondie de HTML, CSS, JavaScript et
-          React. Expérimenté dans l'optimisation de la performance et
-          l'amélioration de l'expérience utilisateur pour divers dispositifs et
-          tailles d'écran.
+          Conception d'interfaces utilisateur interactives et fluides avec HTML,
+          CSS(SASS), JavaScript, React, TailwindCSS et VueJs. Optimisation de la
+          performance et amélioration de l'expérience utilisateur.
         </p>
       </div>
 
@@ -27,10 +25,8 @@ const What = () => {
         <FaWordpress />
         <h3>WordPress</h3>
         <p>
-          Aptitude à développer, personnaliser et gérer des sites web WordPress,
-          y compris l'intégration de plugins et la personnalisation de thèmes
-          pour répondre à des besoins spécifiques. Expérience dans la résolution
-          de problèmes et la mise à jour de sites existants.
+          Développement, personnalisation et gestion de sites WordPress.
+          Intégration de plugins et personnalisation de thèmes.
         </p>
       </div>
 
@@ -38,10 +34,8 @@ const What = () => {
         <FaDatabase />
         <h3>Gestion de bases de données</h3>
         <p>
-          Capable de concevoir et de gérer des bases de données efficaces,
-          d'effectuer des requêtes complexes pour extraire des informations, et
-          de garantir la sécurité et l'intégrité des données. Familiarisé avec
-          la mise en place et la maintenance de systèmes de sauvegarde.
+          Conception et gestion de bases de données efficaces. Requêtes
+          complexes et garantie de la sécurité des données.
         </p>
       </div>
 
@@ -49,9 +43,8 @@ const What = () => {
         <FaMobileAlt />
         <h3>Conception responsive</h3>
         <p>
-          Habile à développer des sites web qui s'adaptent automatiquement à
-          différents dispositifs, assurant ainsi une expérience utilisateur
-          uniforme sur ordinateurs, tablettes et smartphones.
+          Développement de sites web adaptatifs pour ordinateurs, tablettes et
+          smartphones.
         </p>
       </div>
 
@@ -59,10 +52,8 @@ const What = () => {
         <FaGit />
         <h3>Utilisation d'outils de versionnement</h3>
         <p>
-          Expérimenté dans l'utilisation de Git pour suivre les modifications,
-          collaborer avec d'autres développeurs et gérer différentes versions
-          d'un projet. Capable de résoudre les conflits de code et de travailler
-          avec des branches multiples.
+          Utilisation de Git pour suivre les modifications, collaborer et gérer
+          les versions de projets.
         </p>
       </div>
 
@@ -70,11 +61,8 @@ const What = () => {
         <FaSearch />
         <h3>Compréhension des principes de SEO</h3>
         <p>
-          Compétent dans l'optimisation de sites web pour les moteurs de
-          recherche, y compris l'amélioration de la structure du site,
-          l'optimisation du contenu et la garantie d'une performance rapide du
-          site. Familiarisé avec les outils d'analyse pour suivre et améliorer
-          le classement des sites.
+          Optimisation de sites web pour les moteurs de recherche. Amélioration
+          de la structure et du contenu du site.
         </p>
       </div>
     </div>

@@ -260,17 +260,16 @@ main {
   }
   #quest-ce-que-je-fais {
     background-color: $color-projet-1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px 20px;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // 3 colonnes
+    grid-template-rows: repeat(2, auto); // 2 lignes
+    padding: 20px;
+    gap: 10px;
     .icon-box {
       background-color: $color-projet-5;
-      padding: 30px;
+      padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 380px;
       text-align: center;
       transition: transform 0.3s ease;
       h3 {
